@@ -34,12 +34,12 @@ AppAsset::register($this);
         'brandLabel' => 'ระบบจองห้องประชุมออนไลน์',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-custom navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
         ['label' => 'หน้าหลัก', 'url' => ['/site/index']],
-        ['label' => 'ปฏิทินห้องประชุม', 'url' => ['/site/index']],
+        ['label' => 'ปฏิทินห้องประชุม', 'url' => ['/calendar/index']],
         ['label' => 'จองห้องประชุม', 'url' => ['/site/index']],
         //['label' => 'About', 'url' => ['/site/about']],
         //['label' => 'Contact', 'url' => ['/site/contact']],

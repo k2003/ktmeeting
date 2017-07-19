@@ -16,7 +16,8 @@ class MaterialAsset extends AssetBundle
     
     public $css = [
         'css/materialize.min.css',
-        'css/style.css',
+        //'css/style.css',
+        'css/site.css',
     ];
     public $js = [
         'js/init.js',
@@ -32,6 +33,6 @@ class MaterialAsset extends AssetBundle
     ];*/
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        //'yii\bootstrap\BootstrapAsset',
     ];
 }
