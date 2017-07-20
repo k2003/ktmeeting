@@ -44,14 +44,18 @@ return [
             ],
         ],
         */
-       'view' => [
-         'theme' =>[
-             'pathMap' =>[
-               //'@app/views'=>'@frontend/themes/material/views' 
-                 '@app/views'=>'@frontend/themes/nontmaterial/views'
-             ],
-         ],  
-       ],
+               
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                  '@app/views'=>'@frontend/themes/material/views'
+                //'@app/views'=>'@frontend/themes/material/views' 
+                //'@app/views'=>'@frontend/themes/nontmaterial/views'
+                ]
+            ]
+        ],
+        
+        
     ],
     'params' => $params,
 ];

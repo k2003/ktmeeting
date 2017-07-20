@@ -29,9 +29,7 @@ MaterialAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
     <header>
-        <nav class="row">
-        <div class="nav-wrapper">
-            <div class="col-12">
+        <div class="wrap">
             <?php
             NavBar::begin([
                 'brandLabel' => 'ระบบจองห้องประชุมออนไลน์',
@@ -64,11 +62,8 @@ MaterialAsset::register($this);
             NavBar::end();
             ?>
         </div>
-        </div>
-        </nav>
     </header>
-    
-    <main class="wrap">
+    <main>
         <div class="container">
             <?=
             Breadcrumbs::widget([

@@ -6,11 +6,13 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\themes\nontmaterial;
 use common\widgets\Alert;
+//use macgyer\yii2materializecss\assets\MaterializeAsset;
 //use macgyer\yii2materializecss\widgets\Nav;
 //use macgyer\yii2materializecss\widgets\NavBar;
 //use macgyer\yii2materializecss\widgets\Breadcrumbs;
 
 nontmaterial\MaterialAsset::register($this);
+//MaterializeAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
@@ -33,13 +35,13 @@ nontmaterial\MaterialAsset::register($this);
         'brandLabel' => 'ระบบจองห้องประชุมออนไลน์',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-fixed',
+            'class' => 'navbar navbar-fixed cyan darken-3',
         ],
     ]);
     $menuItems = [
         ['label' => 'หน้าหลัก', 'url' => ['/site/index']],
         ['label' => 'ปฏิทินห้องประชุม', 'url' => ['/calendar/index']],
-        ['label' => 'จองห้องประชุม', 'url' => ['/site/index']],
+        ['label' => 'จองห้องประชุม', 'url' => ['#']],
         //['label' => 'About', 'url' => ['/site/about']],
         //['label' => 'Contact', 'url' => ['/site/contact']],
     ];
@@ -57,7 +59,7 @@ nontmaterial\MaterialAsset::register($this);
             . '</li>';
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right hide-on-med-and-down'],
         'items' => $menuItems,
     ]);
     NavBar::end();
@@ -72,7 +74,7 @@ nontmaterial\MaterialAsset::register($this);
     </div>
 </div>
 <!--------------Footer-------------------->   
-<footer class="page-footer">
+<footer class="page-footer cyan darken-3">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -94,7 +96,7 @@ nontmaterial\MaterialAsset::register($this);
             <div class="container">
             &copy; Klongthom Hospital <?= date('Y') ?>
             <!--a class="grey-text text-lighten-4 right" href="#!">More Links</a-->
-            <a class="grey-text text-lighten-4 right" href="#!"><?= Yii::powered() ?></a>
+            
             </div>
           </div>
         </footer>
